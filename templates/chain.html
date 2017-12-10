@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+      <title>Options Chain</title>
+      <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+      <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+  </head>
+<body>
+<div class="container">
+  <h2>Options Chain</h2>
+  <br>
+  {% for table in tables %}
+    <h3>{{titles[loop.index]}}</h3>
+    {{ table|safe }}
+  {% endfor %}
+</div>
+<br>
+</div>
+</div>
+</body>
+</html>
